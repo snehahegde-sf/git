@@ -1,0 +1,67 @@
+-- LINUX COMMANDS. (TO CREATE A FOLDER)
+$pwd  -- Present working directory
+$mkdir <directory/folder name> -- Create a new folder in desktop 
+$ls  -- the list of files that are present working directory
+$cd <directory/folder name> -- to change the directory/ to go to that particular directory
+$cd .. -- it will go to the previous directory
+$touch <file name> -- we are creating the file in that directory
+$nano <file name> -- to open the file as well as we can write the code/info
+$cat <file name> -- it will show the input in that file.
+
+-- GIT COMMANDS.
+$git status -- to check the status.
+$git init -- to initialize the empty repository
+$git add . -- to add all the files to the local repositories.
+$git add <file name> -- to add specific single file to the local repository.
+$git config user.name "NAME"  
+$git config user.email "EMAIL" -- TO CONFIGURE BOTH NAME AND EMAIL 
+$git commit -m "commit message"(like version1/2) -- for commiting files to the local repo.
+$git log -- to check the logs of commits (commit-id,name,email-id,time,commit message).
+
+-- PUSH TO YOU GITHUB.
+$git remote add origin <url> -- giving connection from your local repository to your github
+$git push -u origin master   -- pushing the file to your github(check wether it is in master node or main node
+
+-- IF YOU ARE CREATING AND PUSHING MORE VERSIONS FOLLOW THESE CODES.
+$nano <file name>
+$cat <file name>
+$git add <file name>
+$git "commit message"
+$git log
+$git push -u origin master
+
+--IF YOU WANT TO CHANGE THE VERSION THAT YOU NEED FOLLOW THESE CODES.
+$git checkout <copy & paste the version's id here> -- now it will switch to that version
+$nano <file name> -- to check the version
+$git log -- this will also help to check the current version
+$git checkout master -- it will help you to get back to the original version
+
+
+
+-- TO CREATE A BRANCH IN VERSION.
+$git branch <branch name> -- this will create just create a new branch.
+$git checkout <branch name> -- takes to that particular branch
+$git checkout -b <branch name> -- it will create the branch as well as it will take you to that particular branch.
+$touch <branch file name with its extension> -- to create a new file in the branch
+$nano <branch file name with its extension> -- to open that file
+$cat <branch file name with its extension> (optional)
+$git status
+-- PUSH THAT BRANCH TO YOUR GITHUB REPOSITORY.
+$git add . -- it will add the branch to the local repository
+$git commit -m "commit message"
+$git push -u origin <branch name>
+$git checkout master -- to comeback to the master node
+$git merge <branch name> -- to comeback to the master node
+
+-- STEPS TO PULL A CODE FROM A REPOSITORY.
+$cd
+$git remote add origin "<url>"
+$git pull origin main/master/branch name
+$git status
+
+-- CLONING THE REPOSITORY.
+$git clone <url>
+
+-- FOR FORKING THERE IS A OPTION IN GITHUB ITSELF.
+
+
